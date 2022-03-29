@@ -49,4 +49,17 @@ button:hover {
     background-color: transparent;
     border: 2px solid white;
     color: white;
+}.footer {
+    text-align: center;
+    margin-top: -10px;
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+i {
+    color: rgb(0, 0, 0);
+}
+i:hover {
+    color: rgb(33, 114, 235);
 }
