@@ -5,7 +5,8 @@ const btn = document.querySelector("button");
 //documentElement used to pick the :root thing from "css"
 function changeVar() {
   const unit = this.dataset.size || "";
-  document.documentElement.style.setProperty(
+  document.documentElement.style.setProperty
+  (
     `--${this.name}`,
     this.value + unit
   );
