@@ -3,7 +3,7 @@ const allInputs = document.querySelectorAll("input");
 const btn = document.querySelector("button");
 
 //documentElement used to pick the :root thing from "css"
-function changeVar() {
+const changeVar= () => {
   const unit = this.dataset.size || "";
   document.documentElement.style.setProperty
   (
