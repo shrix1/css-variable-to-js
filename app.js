@@ -6,11 +6,14 @@ const btn = document.querySelector("button");
 //e is evnet top grab the input addEventListener Event
 const changeVar = (e) => {
   const targetEl = e.target;
-  const unit = targetEl.dataset.size || "";
+  //if condition going on here
+  const unit = targetEl.name === "color" ? "" : "px";
   document.documentElement.style.setProperty(
     `--${targetEl.name}`,
     targetEl.value + unit
   );
+  //documnetElement used bcz to grab css variables
+  //here syntax:-  setProperty(value of css variable , value)
 };
 
 allInputs.forEach((inp) => {
